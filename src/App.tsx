@@ -1,12 +1,18 @@
-import React from 'react'
-// import './App.css';
+import React from 'react';
+import styled from 'styled-components';
+import GlobalStyle from './style/Global';
+import TimeZoneRow from './App/TimeZoneRow/index';
 
-function App() {
-	return (
-		<>
-			<h1>Hello World</h1>
-		</>
-	)
-}
-
-export default App
+const Header = styled.h1`
+    font-size: 35px;
+    font-style: italic;
+`;
+const App: React.FC = () => (
+    <>
+        <GlobalStyle />
+        <Header> Time Zone Covnerter</Header>
+        <TimeZoneRow />
+        <TimeZoneRow />
+    </>
+);
+export default App;
