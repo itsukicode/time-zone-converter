@@ -4,14 +4,14 @@ on:
     pull_request:
         branch: [main]
 
-    jobs:
-        test_pull_request:
-            run-on: ubuntu-latest
-            steps:
-                - uses: actions/checkout@v2
-                - uses: actions/setup-node@1
-                  with:
-                      node-version: 12
-                - run: npm ci
-                - run: yarn test
-                - run: yarn build
+jobs:
+    test_pull_request:
+        run-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@1
+              with:
+                  node-version: 12
+            - run: npm ci
+            - run: yarn test
+            - run: yarn build
