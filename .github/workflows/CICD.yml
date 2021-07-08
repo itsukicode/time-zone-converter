@@ -20,4 +20,4 @@ jobs:
               with:
                   args: deploy --only hosting
               env:
-                  FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TIME_ZONE_CONVERTER_3A99A }}
+                  FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
