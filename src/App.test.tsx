@@ -7,7 +7,7 @@ describe('Render App Component', () => {
         setTimeout(() => {
             const { getByTestId } = render(<App />);
             const headerEl = getByTestId('header');
-            expect(headerEl.textContent).toBe('Time Zone Covnerter');
+            expect(headerEl.textContent).toBe('Time Zone Covnerte');
         }, 500);
     });
 });
